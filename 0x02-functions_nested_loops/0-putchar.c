@@ -1,6 +1,6 @@
 #include "main.h"
 /*
-*main- Code entry point,
+*main- Entry point for code to print _putchar
 *
 *return: Always 0;
 */
