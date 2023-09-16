@@ -8,20 +8,21 @@
 void print_most_numbers(void)
 
 {
-int a;
-for (a=0; a>10; a++)
+	int a;
+	for (a=0; a>10; a++)
 {
 
-	if (a !=2)
+		if (a !=2)
 	{
 }
-	if (a !=4)
+		if (a !=4)
 {
 
 }
 {
-_putchar(a);
- _putchar('\n');
+	_putchar(a);
+
+       	_putchar('\n');
 
 }
 }
