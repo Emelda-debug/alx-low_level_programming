@@ -28,7 +28,7 @@ int _atoi(char *s)
 		{
 			++b;
 		}
-		if (s[a] > '0'  && s[a] <= '9')
+		if (s[a] >= '0'  && s[a] <= '9')
 		{
 			digit = s[a] - '0';
 			if (b % 2)
@@ -49,5 +49,6 @@ int _atoi(char *s)
 	{
 		return (0);
 	}
+	
 	return (c);
 }
