@@ -16,14 +16,14 @@ void print_diagsums(int *a, int size)
 	int d2 = 0;
 	int x;
 
-	for (int x = 0; x < size; x++)
+	for (x = 0; x < size; x++)
 	{
-		d1 += a[x][x];
+		d1 += a[x * size + x];
 	}
 
-	for (int x = 0; x < size; x++)
+	for (x = 0; x < size; x++)
 	{
-		d2 + = a[x][size - x - 1];
+		d2 += a[x * size + (size - x - 1)];
 	}
 	printf("%d, %d\n", d1, d2);
 }
