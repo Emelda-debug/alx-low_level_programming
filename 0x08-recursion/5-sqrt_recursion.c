@@ -1,4 +1,5 @@
 #include "main.h"
+int _example_sqrt_recursion(int a, int b)
 /**
  * _sqrt_recursion-  function that returns the
  *  natural square root of a number
@@ -13,23 +14,20 @@ int _sqrt_recursion(int n)
 	{
 		return (-1);
 	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
 	else
 	{
-		return (_sqrt_recursion(n / (n - 1)));
+		return (example_sqrt_recursion(n, 0));
 	}
 
 }
 /**
- * example_sqrt_recursion- actual numeric demonstration of recursion
- * @a: number wjose square root will be calculated
+ * _example_sqrt_recursion- Function to demonstrate square root
+ * of a natural number recursively
+ * @a: number whose square root will be calculated
  * @b: the iterator
  * Return: the square root of a
  */
-int example_sqrt_recursion(int n,int a,int b)
+int _example_sqrt_recursion(int a, int b)
 {
 	if (b * b > a)
 	{
