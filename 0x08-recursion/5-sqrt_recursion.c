@@ -23,3 +23,22 @@ int _sqrt_recursion(int n)
 	}
 
 }
+/**
+ * example_sqrt_recursion- actual numeric demonstration of recursion
+ * @a: number wjose square root will be calculated
+ * @b: the iterator
+ * Return: the square root of a
+ */
+int example_sqrt_recursion(int n,int a,int b)
+{
+	if (b * b > a)
+	{
+		return (-1);
+	}
+	if (b * b == a)
+	{
+		return (a);
+	}
+	return (example_sqrt_recursion(a, b + 1));
+
+}
