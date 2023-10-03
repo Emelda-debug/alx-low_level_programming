@@ -13,8 +13,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	size - t length1 = strlen(s1);
-	size - t length2 = strlen(s2);
+	size_t length1 = strlen(s1);
+	size_t length2 = strlen(s2);
 
 	char *result = malloc(sizeof(char) * length1 + length2 + 1);
 
