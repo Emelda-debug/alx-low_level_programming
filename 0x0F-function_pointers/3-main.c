@@ -28,8 +28,12 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 		exit (99);
 	}
 
-	if ((p == '/' && y == 0)||
-	
-			printf("Error\n");
-			exit (100);
+	if ((p == '/' && y == 0)||(*p == '%' && y == 0))
+	{
+		printf("Error\n");
+		exit (100);
+	}
+	printf("%d\n", get_op_func(op)(x, y));
+	return (0);
+}
 
