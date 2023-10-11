@@ -5,7 +5,7 @@
  * Return: the name of the file used during compilation
  */
 
-int main()
+int main(void)
 {
 	char *file = __FILE__;
 	
