@@ -31,13 +31,13 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (!s || !(s->next))
 		{
 			return (-1);
-			s = s->next;
-			x++;
 		}
-
-		c = s->next;
-		s->next = c->next;
-		free(c);
+		s = s->next;
+		x++;
 	}
+	c = s->next;
+	s->next = c->next;
+	free(c);
+
 	return (1);
 }
