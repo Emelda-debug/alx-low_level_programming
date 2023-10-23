@@ -13,7 +13,7 @@ size_t free_listint_safe(listint_t **h)
 	int d;
 	listint_t *s;
 
-	if (!h || *h)
+	if (!h || !*h)
 	{
 		return (0);
 	}
@@ -35,7 +35,7 @@ size_t free_listint_safe(listint_t **h)
 			break;
 		}
 	}
-		*h = NULL;
-		return (length);
+	*h = NULL;
+	return (length);
 }
 
