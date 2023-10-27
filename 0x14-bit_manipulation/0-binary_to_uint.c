@@ -6,13 +6,15 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int result = 0;
+	unsigned int result;
 	int x, y;
 
 	if (!b)
 	{
 		return (0);
 	}
+	result = 0;
+
 	for (x = 0; b[x] != '\0'; x++)
 	{
 		;
@@ -25,7 +27,7 @@ unsigned int binary_to_uint(const char *b)
 		}
 		if (b[x] & 1)
 		{
-			result = result + y;
+			result += y;
 		}
 	}
 	return (result);
