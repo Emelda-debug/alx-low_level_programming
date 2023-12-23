@@ -23,7 +23,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	inx = key_index((const unsigned char *)key, ht->size);
 	b = ht->array[inx];
-
 	while (b)
 	{
 		if (!strcmp(key, b->key))
@@ -51,4 +50,3 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[inx] = node2;
 	return (1);
 }
-
